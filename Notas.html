@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Anotación de Imágenes</title>
+  <style>
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 5px;
+      margin-top: 5px;
+    }
+
+    .image-container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .image {
+      width: 200px;
+      margin: 10px;
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Anotación de Imágenes</h1>
+
+  <form id="annotation-form">
+    <label for="comment-input">Comentario:</label>
+    <input type="text" id="comment-input" placeholder="Escribe un comentario">
+
+    <label for="link-input">Enlace:</label>
+    <input type="text" id="link-input" placeholder="Agrega un enlace">
+
+    <label for="tag-input">Etiqueta:</label>
+    <input type="text" id="tag-input" placeholder="Agrega una etiqueta">
+
+    <button type="submit">Guardar Anotación</button>
+  </form>
+
+  <form id="filter-form">
+    <label for="tag-filter">Filtrar por etiquetas:</label>
+    <div>
+      <input type="checkbox" id="tag1" name="tag" value="etiqueta1">
+      <label for="tag1">Etiqueta 1</label>
+    </div>
+    <div>
+      <input type="checkbox" id="tag2" name="tag" value="etiqueta2">
+      <label for="tag2">Etiqueta 2</label>
+    </div>
+    <div>
+      <input type="checkbox" id="tag3" name="tag" value="etiqueta3">
+      <label for="tag3">Etiqueta 3</label>
+    </div>
+    <div>
+      <input type="checkbox" id="tag4" name="tag" value="etiqueta4">
+      <label for="tag4">Etiqueta 4</label>
+    </div>
+    <div>
+      <input type="checkbox" id="tag5" name="tag" value="etiqueta5">
+      <label for="tag5">Etiqueta 5</label>
+    </div>
+    <button type="submit">Filtrar</button>
+  </form>
+
+  <div id="image-container" class="image-container"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
